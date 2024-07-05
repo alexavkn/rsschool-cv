@@ -3,11 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>
-        Averkin Alexander
-    </h1>
+    <header>
+        <img src="img/IMG_0613.jpg" width="150" height="150" class="photo" alt="photo">
+        <nav class="menu">
+            <ul>
+              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        <h1>Averkin Alexander</h1>
+        <h2>1C Developer</h2>
+        <div id="contacts" class="contacts">
+            <div class="contact">
+                <div class="contact__type">
+                    Email
+                </div>
+                <div class="contact__value">
+                    <a href = "mailto:alexavkn@gmail.com">alexavkn@gmail.com</a>
+                </div>
+            </div>
+            <div class="description">
+                Specialist with 5+ years of experience. Capable of not only solving problems independently,
+                but also managing other programmers, as well as suggesting optimal ways to solve problems,
+                and factoring code.
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h3>Experience</h3>
+
+        <div id="experience" class="experience">
+            <div class="experience__date">
+                May 2016 - present
+            </div>
+            <div class="experience__description">
+                <div class="experience__name">1C Developer</div>
+                <div class="experience__company">SOGAZ</div>
+                <div class="experience__details">
+                    <ul>
+                        <li>Administration of 1C databases</li>
+                        <li>Creating exchanges using HTTP, web services, FTP</li>
+                        <li>Finalization of accounting system algorithms in the built-in 1C language</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="experience__date">
+                Apr 2015 - May 2016
+            </div>
+            <div class="experience__description">
+                <div class="experience__name">1C Developer</div>
+                <div class="experience__company">Sber</div>
+                <div class="experience__details">
+                    <ul>
+                        <li>Administration of 1C databases</li>
+                        <li>Creating exchanges using HTTP, web services, FTP</li>
+                        <li>Finalization of accounting system algorithms in the built-in 1C language</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+
+        <h3 id="skills">Skills</h3>
+        <div>
+            <ul>
+                <li>Administration of 1C databases</li>
+                <li>Understanding client-server architecture</li>
+                <li>Creating exchanges using HTTP, web services, FTP</li>
+                <li>Knowledge of the 1C programming language and built-in query language</li>
+                <li>Resolving performance issues</li>
+            </ul>                        
+        </div>
+    </main>
+    <footer>
+        <div id="contacts" class="contacts">
+            <div class="contact">
+                <div class="contact__type">
+                    Github
+                </div>
+                <div class="contact__value">
+                    <a href = "https://github.com/alexavkn/">github.com/alexavkn</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact__type">
+                    Year
+                </div>
+                <div class="contact__value">
+                    2024
+                </div>
+            </div>
+            <a href="https://rs.school/courses/javascript-ru" target="_blank">
+                <img src="img/rs-school-logo.svg" class="logo" alt="logo">
+            </a>
+        </div>        
+    </footer>
 </body>
 </html>
