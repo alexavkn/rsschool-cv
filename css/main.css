@@ -43,7 +43,7 @@ body {
   display: flex;
 }
 .contact__type {
-  min-width: 200px;
+  min-width: 100px;
 }
 
 .description {
@@ -62,9 +62,13 @@ body {
   font-weight: bold;
 }
 
+.logo__ref {
+  display: block;
+}
+
 .logo {
   margin-top: 40px;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
   width: 100px;
   height: 30px;
 }

@@ -13,20 +13,36 @@
             <ul>
               <li><a href="#contacts">Contacts</a></li>
               <li><a href="#experience">Experience</a></li>
+              <li><a href="#code_example">Code example</a></li>
+              <li><a href="#education">Education</a></li>
               <li><a href="#skills">Skills</a></li>
             </ul>
         </nav>
         <h1>Averkin Alexander</h1>
         <h2>1C Developer</h2>
         <div id="contacts" class="contacts">
-            <div class="contact">
-                <div class="contact__type">
-                    Email
-                </div>
-                <div class="contact__value">
-                    <a href = "mailto:alexavkn@gmail.com">alexavkn@gmail.com</a>
-                </div>
-            </div>
+            <ul>
+                <li>
+                    <div class="contact">
+                        <div class="contact__type">
+                            Email
+                        </div>
+                        <div class="contact__value">
+                            <a href = "mailto:alexavkn@gmail.com">alexavkn@gmail.com</a>
+                        </div>
+                    </div>
+                </li> 
+                <li>
+                    <div class="contact">
+                        <div class="contact__type">
+                            Address   
+                        </div>
+                        <div class="contact__value">
+                            Guryanova Street, Moscow, Russia
+                        </div>
+                    </div>
+                </li>    
+            </ul>
             <div class="description">
                 Specialist with 5+ years of experience. Capable of not only solving problems independently,
                 but also managing other programmers, as well as suggesting optimal ways to solve problems,
@@ -36,9 +52,9 @@
     </header>
 
     <main>
-        <h3>Experience</h3>
+        <h3 id="experience">Experience</h3>
 
-        <div id="experience" class="experience">
+        <div class="experience">
             <div class="experience__date">
                 May 2016 - present
             </div>
@@ -71,7 +87,52 @@
                 </div>
             </div>
         </div>
-    
+
+        <h3 id="code_example">Code example</h3>
+
+        <div class="code_example__date">
+            SELECT
+                Doc1.Ref AS ref,
+                Doc1.ra AS ra
+            INTO Temp1
+            FROM
+                Document.Doc1 AS Doc1
+            WHERE
+                Doc1.Date >= DATETIME(2013, 1, 1)
+                AND Doc1.Posted
+                AND (NOT Doc1.DeletionMark) index by ref
+        </div>
+
+        <h3 id="education">Education</h3>
+
+        <div class="education">
+            <ul>
+                <li>
+                    <div class="education">
+                        <div class="education__type">
+                            University
+                        </div>
+                        <div class="education__value">
+                            State University of Management
+                        </div>
+                    </div>
+                </li> 
+                <li>
+                    <div class="education">
+                        <div class="education__type">
+                            Courses   
+                        </div>
+                        <div class="education__value">
+                            1C, HTML5, CSS3 (SCSS), JS (ES6+)
+                        </div>
+                    </div>
+                </li>    
+            </ul>
+        </div>
+
+        <h3 id="english">English</h3>
+
+        <div class="english">A2</div>
 
         <h3 id="skills">Skills</h3>
         <div>
@@ -85,13 +146,13 @@
         </div>
     </main>
     <footer>
-        <div id="contacts" class="contacts">
+        <div class="contacts">
             <div class="contact">
                 <div class="contact__type">
                     Github
                 </div>
                 <div class="contact__value">
-                    <a href = "https://github.com/alexavkn/">github.com/alexavkn</a>
+                    <a href = "https://github.com/alexavkn/" target="_blank">github.com/alexavkn</a>
                 </div>
             </div>
             <div class="contact">
