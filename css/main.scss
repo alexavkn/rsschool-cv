@@ -65,15 +65,22 @@ body {
     }
 }
 
+.year {
+    margin-top: 40px;
+    margin-bottom: 40px;   
+}
+
 .logo__ref {
     display: block;
+    width: 100px;
+    height: 30px;
+    margin: 0;
 }
 
 .logo {
-    margin-top: 40px;
-    margin-bottom: 40px;
     width: 100px;
     height: 30px;
+    margin: 0;
  }
 
 @media (max-width: 575px) {
