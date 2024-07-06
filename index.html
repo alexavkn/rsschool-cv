@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <img src="img/IMG_0613.jpg" width="150" height="150" class="photo" alt="photo">
+        <nav class="menu">
+            <ul>
+              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#code_example">Code example</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        <h1>Averkin Alexander</h1>
+        <h2>1C Developer</h2>
+        <div id="contacts" class="contacts">
+            <ul>
+                <li>
+                    <div class="contact">
+                        <div class="contact__type">
+                            Email
+                        </div>
+                        <div class="contact__value">
+                            <a href = "mailto:alexavkn@gmail.com">alexavkn@gmail.com</a>
+                        </div>
+                    </div>
+                </li> 
+                <li>
+                    <div class="contact">
+                        <div class="contact__type">
+                            Address   
+                        </div>
+                        <div class="contact__value">
+                            Guryanova Street, Moscow, Russia
+                        </div>
+                    </div>
+                </li>    
+            </ul>
+            <div class="description">
+                Specialist with 5+ years of experience. Capable of not only solving problems independently,
+                but also managing other programmers, as well as suggesting optimal ways to solve problems,
+                and factoring code.
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h3 id="experience">Experience</h3>
+
+        <div class="experience">
+            <div class="experience__date">
+                May 2016 - present
+            </div>
+            <div class="experience__description">
+                <div class="experience__name">1C Developer</div>
+                <div class="experience__company">SOGAZ</div>
+                <div class="experience__details">
+                    <ul>
+                        <li>Administration of 1C databases</li>
+                        <li>Creating exchanges using HTTP, web services, FTP</li>
+                        <li>Finalization of accounting system algorithms in the built-in 1C language</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="experience__date">
+                Apr 2015 - May 2016
+            </div>
+            <div class="experience__description">
+                <div class="experience__name">1C Developer</div>
+                <div class="experience__company">Sber</div>
+                <div class="experience__details">
+                    <ul>
+                        <li>Administration of 1C databases</li>
+                        <li>Creating exchanges using HTTP, web services, FTP</li>
+                        <li>Finalization of accounting system algorithms in the built-in 1C language</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="code_example">Code example</h3>
+
+        <div class="code_example__date">
+            SELECT
+                Doc1.Ref AS ref,
+                Doc1.ra AS ra
+            INTO Temp1
+            FROM
+                Document.Doc1 AS Doc1
+            WHERE
+                Doc1.Date >= DATETIME(2013, 1, 1)
+                AND Doc1.Posted
+                AND (NOT Doc1.DeletionMark) index by ref
+        </div>
+
+        <h3 id="education">Education</h3>
+
+        <div class="education">
+            <ul>
+                <li>
+                    <div class="education">
+                        <div class="education__type">
+                            University
+                        </div>
+                        <div class="education__value">
+                            State University of Management
+                        </div>
+                    </div>
+                </li> 
+                <li>
+                    <div class="education">
+                        <div class="education__type">
+                            Courses   
+                        </div>
+                        <div class="education__value">
+                            1C, HTML5, CSS3 (SCSS), JS (ES6+)
+                        </div>
+                    </div>
+                </li>    
+            </ul>
+        </div>
+
+        <h3 id="english">English</h3>
+
+        <div class="english">A2</div>
+
+        <h3 id="skills">Skills</h3>
+        <div>
+            <ul>
+                <li>Administration of 1C databases</li>
+                <li>Understanding client-server architecture</li>
+                <li>Creating exchanges using HTTP, web services, FTP</li>
+                <li>Knowledge of the 1C programming language and built-in query language</li>
+                <li>Resolving performance issues</li>
+            </ul>                        
+        </div>
+    </main>
+    <footer>
+        <div class="contacts">
+            <div class="contact">
+                <div class="contact__type">
+                    Github
+                </div>
+                <div class="contact__value">
+                    <a href = "https://github.com/alexavkn/" target="_blank">github.com/alexavkn</a>
+                </div>
+            </div>
+            <div class="year">
+                <div class="contact">
+                    <div class="contact__type">
+                        Year
+                    </div>
+                    <div class="contact__value">
+                        2024
+                    </div>
+                </div>
+            </div>
+            <a href="https://rs.school/courses/javascript-ru" class="logo__ref" target="_blank">
+                <img src="img/rs-school-logo.svg" class="logo" alt="logo">
+            </a>
+        </div>        
+    </footer>
+</body>
+</html>
